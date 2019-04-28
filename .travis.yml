@@ -1,0 +1,27 @@
+sudo: false
+
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode10.2 # macOS 10.14
+      language: generic
+    - os: osx
+      osx_image: xcode9.4 # macOS 10.13
+      language: generic
+
+env:
+  matrix:
+    - PYTHON_TARGET_VERSION=3.7.3
+
+install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pyenv --version; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pyenv install $PYTHON_TARGET_VERSION; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pyenv local $PYTHON_TARGET_VERSION; fi
+  - pip install pipenv
+  - pipenv sync --dev
+
+script:
+  - pipenv run ansible --version
+  - pipenv run test:lint
+  - pipenv run test:unit:module
+  - pipenv run test:unit:role
