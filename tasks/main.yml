@@ -10,6 +10,6 @@
 - name: Install packages for Atom
   apm:
     name: "{{ item.name }}"
-    state: "{{ item.state | default('present') }}"
+    state: "{{ item.state | default('latest') }}"
   with_items: "{{ atom.packages }}"
   become: no
