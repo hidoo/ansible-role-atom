@@ -19,7 +19,7 @@ roles:
 vars:
   atom:
 
-    # skip install visual studio code or not (default: no)
+    # skip install atom or not (default: no)
     skip_install: yes
 
     # list of packages to install (default state: latest)
