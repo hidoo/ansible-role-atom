@@ -1,0 +1,15 @@
+---
+- name: Install Atom
+  homebrew_cask:
+    name: atom
+    state: present
+    update_homebrew: yes
+  when: not atom.skip_install | default(False)
+  become: no
+
+- name: Install packages for Atom
+  apm:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('present') }}"
+  with_items: "{{ atom.packages }}"
+  become: no

@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[pipenv]
+allow_prereleases = true
+
+[scripts]
+"test:lint" = "flake8 -v --max-line-length 88 --exclude './.venv'"
+"test:unit" = "python -m unittest discover -v -s './tests' -p '*_test.py'"
+"test:unit:module" = "python -m tests.apm_test -v"
+"test:unit:role" = "python -m tests.role_test -v"
+format = "black -v"
+
+[dev-packages]
+ansible = "~=2.7.10"
+black = "~=19.3b0"
+flake8 = "~=3.7.7"
+commitizen = "~=1.3.0"
+
+[packages]
+
+[requires]
+python_version = "3.7"
