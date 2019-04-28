@@ -14,7 +14,7 @@ env:
     - PYTHON_TARGET_VERSION=3.7.3
 
 install:
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew upgrade --force pyenv; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew upgrade pyenv || true; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pyenv --version; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pyenv install $PYTHON_TARGET_VERSION; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pyenv global $PYTHON_TARGET_VERSION; fi
