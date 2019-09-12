@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "timezone": "Asia/Tokyo",
+  "labels": [
+    "renovate"
+  ],
+  "schedule": [
+    "every weekend"
+  ],
+  "pipenv": {
+    "enabled": true
+  },
+  "patch": {
+    "automerge": true
+  },
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "updateTypes": [
+        "major"
+      ],
+      "labels": [
+        "major update"
+      ]
+    }
+  ]
+}
