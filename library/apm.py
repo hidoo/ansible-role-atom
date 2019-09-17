@@ -10,8 +10,8 @@ class ApmModule:
                 "name": {"type": "str", "required": True},
                 "state": {
                     "choices": ["latest", "present", "absent"],
-                    "default": "present"
-                }
+                    "default": "present",
+                },
             },
             supports_check_mode=True,
         )

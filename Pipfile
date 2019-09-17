@@ -11,7 +11,7 @@ allow_prereleases = true
 "test:unit" = "python -m unittest discover -v -s './tests' -p '*_test.py'"
 "test:unit:module" = "python -m tests.apm_test -v"
 "test:unit:role" = "python -m tests.role_test -v"
-format = "black -v"
+format = "black -v ."
 
 [dev-packages]
 ansible = "~=2.8.5"

@@ -29,12 +29,8 @@ class TestApmModule(unittest.TestCase):
             ]
             mocked_run_command.return_value = (
                 0,
-                (
-                    "piyo@0.0.0\n"
-                    "fuga@0.0.0\n"
-                    "hoge@0.0.0"
-                ),
-                ""
+                ("piyo@0.0.0\n" "fuga@0.0.0\n" "hoge@0.0.0"),
+                "",
             )
 
             for case in cases:
