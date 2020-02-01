@@ -17,7 +17,7 @@ format = "black -v ."
 ansible = "==2.9.4"
 black = "==19.3b0"
 flake8 = "==3.7.9"
-commitizen = "==1.16.0"
+commitizen = "==1.16.1"
 
 [packages]
 
