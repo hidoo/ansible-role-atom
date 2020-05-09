@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ee79d947e0d4bd07ad66792a647237209907c8f3e8c6d555d65cd4dc9fcdec45"
+            "sha256": "9a8036b023e3b5149a411a0bf5f2b4b910f823e9fcfbb4b819a02d6731bd9c04"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -81,10 +81,10 @@
         },
         "click": {
             "hashes": [
-                "sha256:8a18b4ea89d8820c5d0c7da8a64b2c324b4dabb695804dbfea19b9be9d88c0cc",
-                "sha256:e345d143d80bf5ee7534056164e5e112ea5e22716bbb1ce727941f4c8b471b9a"
+                "sha256:d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a",
+                "sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"
             ],
-            "version": "==7.1.1"
+            "version": "==7.1.2"
         },
         "colorama": {
             "hashes": [
@@ -95,11 +95,11 @@
         },
         "commitizen": {
             "hashes": [
-                "sha256:c3671fc7490dee1e7e924185431f3e0fb266b76ff3266011d38aca75ac62c980",
-                "sha256:e9c73bf3a1928d37676b3f212e45b1c35ed67653905120b4fc471d2693e6847a"
+                "sha256:1c3eba85bd939a65185def470eb62e2c35cf3051489b08ec9998829d615c3a89",
+                "sha256:ef1e40d03b8d87cf4423098756fa1b26d1a13eaab6e214ffa8852eab8d9e75a8"
             ],
             "index": "pypi",
-            "version": "==1.18.3"
+            "version": "==1.21.0"
         },
         "cryptography": {
             "hashes": [
@@ -279,6 +279,14 @@
                 "sha256:f044eda25647882e5ef22b43a1688fb6ab12af2fc50e8456cdfc751c873101cf"
             ],
             "version": "==0.5.11"
+        },
+        "typing": {
+            "hashes": [
+                "sha256:91dfe6f3f706ee8cc32d38edbbf304e9b7583fb37108fef38229617f8b3eba23",
+                "sha256:c8cabb5ab8945cd2f54917be357d134db9cc1eb039e59d1606dc1e60cb1d9d36",
+                "sha256:f38d83c5a7a7086543a0f649564d661859c5146a85775ab90c0d2f93ffaa9714"
+            ],
+            "version": "==3.7.4.1"
         },
         "wcwidth": {
             "hashes": [
