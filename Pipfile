@@ -14,7 +14,7 @@ allow_prereleases = true
 format = "black -v ."
 
 [dev-packages]
-ansible = "==2.9.12"
+ansible = "==2.9.13"
 black = "==19.3b0"
 flake8 = "==3.8.3"
 commitizen = "==1.21.0"
