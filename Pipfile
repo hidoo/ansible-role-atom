@@ -16,7 +16,7 @@ format = "black -v ."
 [dev-packages]
 ansible = "==2.9.15"
 black = "==19.3b0"
-flake8 = "==3.8.4"
+flake8 = "==3.9.2"
 commitizen = "==1.21.0"
 
 [packages]
